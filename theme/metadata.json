@@ -12,7 +12,7 @@
         "License": "LGPL-2.1-or-later",
         "Name": "Square Breeze",
         "Version": "@VERSION@",
-        "Website": "https://github.com/YOUR-GITHUB-USERNAME/square-breeze"
+        "Website": "https://github.com/Anthony-S45/square-breeze"
     },
     "X-Plasma-API": "5.0"
 }

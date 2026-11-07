@@ -25,7 +25,7 @@ plasma-apply-desktoptheme square-breeze
 **From a clone.**
 
 ```sh
-git clone https://github.com/YOUR-GITHUB-USERNAME/square-breeze
+git clone https://github.com/Anthony-S45/square-breeze
 cd square-breeze
 ./install.sh            # installs to ~/.local/share/plasma/desktoptheme/square-breeze
 ```
