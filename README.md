@@ -73,10 +73,26 @@ Deliberately kept:
 - **Legacy assets** that Plasma 6 doesn't use (`monitor`, `picker` and the
   bitmap-based selected `media-delegate`).
 
-**Known limitation:** a few newer Plasma/Kirigami UI elements, such as the thumbnail
-grids in System Settings, round their corners in QML code
-(`Kirigami.Units.cornerRadius`) instead of using Plasma Style SVGs, so no Plasma Style
-can square them.
+## Optional: square desktop selection box
+
+The rectangle you drag on the desktop to select icons, and the box around an icon's name
+while renaming it, aren't drawn by the Plasma Style. The desktop's QML hard-codes their
+radius (`Kirigami.Units.cornerRadius`). To square them too:
+
+```sh
+extras/square-desktop.sh            # undo with: extras/square-desktop.sh --remove
+```
+
+This copies the desktop containment from *your installed Plasma* into
+`~/.local/share/plasma/plasmoids/` with only those two radius lines set to 0, and
+restarts plasmashell. A systemd drop-in re-syncs the copy every time plasmashell starts,
+so after a Plasma update you get the new desktop code with the same two-line change. If
+a future Plasma draws the box differently, the override removes itself instead of
+going stale. (Plasma started without systemd: re-run the script after updates.)
+
+**Known limitation:** a few other Plasma/Kirigami elements, such as the thumbnail grids
+in System Settings, also round their corners in QML code rather than in Plasma Style
+SVGs, so no Plasma Style can square them.
 
 ## How it works
 
