@@ -1,0 +1,18 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Anthony Schuler"
+            }
+        ],
+        "Category": "",
+        "Description": "Breeze with square corners: panels, popups, tooltips, buttons, highlights, sliders and more",
+        "EnabledByDefault": true,
+        "Id": "square-breeze",
+        "License": "LGPL-2.1-or-later",
+        "Name": "Square Breeze",
+        "Version": "1.0.0",
+        "Website": "https://github.com/YOUR-GITHUB-USERNAME/square-breeze"
+    },
+    "X-Plasma-API": "5.0"
+}
